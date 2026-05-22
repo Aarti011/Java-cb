@@ -4,8 +4,8 @@
      
 using namespace std;
  
-int main()
-{int n=5;
+int main(){
+    int n=5;
     int a[n]={1,3,7,4};
     for(int i=0; i<n; i++){
         // cout<<*(a+i)<<endl;
