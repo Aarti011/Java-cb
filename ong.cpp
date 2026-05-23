@@ -1,3 +1,4 @@
+// cpp code for take input
 #include<iostream>
 #include<climits>
      
