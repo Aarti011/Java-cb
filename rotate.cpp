@@ -1,3 +1,5 @@
+// multiple basic cpp code related to arrays
+
 // #include<iostream>
 // #include<climits>
 // #include<cstring>
