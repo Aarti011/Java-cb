@@ -102,9 +102,9 @@ class Main {
         for (int i=0; i<len; i++){
             arr[i]= sc.nextInt();
         }
-        int max=0;
+        int max=arr[0];
         System.out.println("Only showing the values that are negative :");
-        for(int i=0; i<len; i++){
+        for(int i=1; i<len; i++){
             if(arr[i]>max)max=arr[i];
         }
         System.out.println(max);
