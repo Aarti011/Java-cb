@@ -90,9 +90,36 @@ class Main {
             sum+=arr[i];
             System.out.println(sum);
         }
+//max in array
+      import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the length of array: ");
+        int len=sc.nextInt();
+        int[] arr=new int[len]; 
+        System.out.println("Now enter the values :");
+        for (int i=0; i<len; i++){
+            arr[i]= sc.nextInt();
+        }
+        int max=0;
+        System.out.println("Only showing the values that are negative :");
+        for(int i=0; i<len; i++){
+            if(arr[i]>max)max=arr[i];
+        }
+        System.out.println(max);
+
+    }
+}
 
 
 
 
 
 
+
+
+
+
+
+      
