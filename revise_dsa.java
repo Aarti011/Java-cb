@@ -72,6 +72,24 @@ class Main {
     }
 }
 
+// Array  sum of each 
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the length of array: ");
+        int len=sc.nextInt();
+        int[] arr=new int[len]; 
+        System.out.println("Now enter the values :");
+        for (int i=0; i<len; i++){
+            arr[i]= sc.nextInt();
+        }
+        int sum=0;
+        System.out.println("Only showing the values that are negative :");
+        for(int i=0; i<len; i++){
+            sum+=arr[i];
+            System.out.println(sum);
+        }
 
 
 
