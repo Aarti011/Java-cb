@@ -122,4 +122,46 @@ class Main {
 
 
 
+
+
+      class Solution {
+    public List<List<Integer>> threeSum(int[] a) {
+        List<List<Integer>> result=new ArrayList<>();
+    	int n=a.length;
+    	if(n<3)return result;
+    	Arrays.sort(a);
+    	for(int i=0; i<n-2; i++) {
+    		if(i>0 && a[i]==a[i-1])continue;
+    		int s=i+1; int e=n-1;
+    		while(s<e){
+    			int sum=a[i]+a[s]+a[e];
+    			if(sum==0) {
+    				result.add(Arrays.asList(a[i],a[s],a[e]));
+    				s++;
+    				e--;
+    				while(s<e && a[s]==a[s-1]) {s++;}
+    				while(s<e && a[e]==a[e+1]) {e--;}
+    				
+    			}
+    			else if(sum<0) {
+    				s++;
+    			}
+    			else {
+    				e--;
+    			}
+    			
+    		}
+    	}
+    	return result;
+    }
+}
+
+
+
+
+
+
+
+
+
       
