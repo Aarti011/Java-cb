@@ -131,14 +131,6 @@ class Solution {
     }
 }
 
-      
-class Solution {
-   public static void main(String args[]){
-     Map<Integer, Integer> map=new HashAMp<>();
-     int i=0;
-     while( i<nums.length){
-       
-     
 
 
 // leetcode 3sum problem
