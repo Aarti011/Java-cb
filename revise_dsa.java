@@ -114,19 +114,11 @@ class Main {
 
 
 
+// leetcode 3sum problem
 
-
-
-
-
-
-
-
-
-
-      class Solution {
+class Solution {
     public List<List<Integer>> threeSum(int[] a) {
-        List<List<Integer>> result=new ArrayList<>();
+      List<List<Integer>> result=new ArrayList<>();
     	int n=a.length;
     	if(n<3)return result;
     	Arrays.sort(a);
