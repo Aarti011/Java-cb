@@ -114,6 +114,33 @@ class Main {
 
 
 
+
+// leetcode 2Sum problem
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map=new HashMap<>();
+        int i=0;
+        while(i<nums.length){
+            int val = target-nums[i];
+            if(map.containsKey(val)){return new int[]{map.get(val),i};}
+            map.put(nums[i], i);
+            i++;
+        }
+        return new int[]{-1,-1};
+    }
+}
+
+      
+class Solution {
+   public static void main(String args[]){
+     Map<Integer, Integer> map=new HashAMp<>();
+     int i=0;
+     while( i<nums.length){
+       
+     
+
+
 // leetcode 3sum problem
 
 class Solution {
