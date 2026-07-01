@@ -17,3 +17,54 @@ public class Main{
       System.out.println("Over");  
   }
 }
+
+
+
+// Recursion code in java
+
+import java.util.Scanner;
+public class Main{
+    public static void func(int num){
+        func(num-1);
+        System.out.println(num);      
+    }
+    public static void main(){
+        Scanner cs= new Scanner(System.in);
+        int n=nextInt();
+        System.out.println("Started");
+        func(n);
+        System.out.println("Done");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// fibonacci using recursion
+
+public class Main{
+    public static int func(int n){
+        if(n<2)return n;
+        return func(n-1)+func(n-2);
+
+    }
+    public static void main(String args[]){
+        int n=4;
+        System.out.println(func(n));
+    }
+}
+
+
+
+
+
+
+
+
+
