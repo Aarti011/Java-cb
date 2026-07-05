@@ -91,6 +91,44 @@ public class Main{
 }
 
 
+// binary search using recursion
+import java.util.*;
+public class Main{
+    public static void sort(int[] arr){
+        int len= arr.length;
+        for(int i=0; i<len-1; i++) {
+            for(int j=i+1; j<len; j++){
+                if(arr[i]>arr[j])swap(arr,i,j);
+            }
+        }
+    }
+    public static void swap(int[] arr, int a,int b){
+        int temp=arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        int[] arr= {43,64,2,63,53,6,2};
+        sort(arr);
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]);
+        }
+        sc.close();
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
