@@ -63,6 +63,34 @@ public class Main{
 
 
 
+// binary search without recursion
+import java.util.*;
+public class Main{
+    public static int func(int[] a, int t){
+        int u=a.length-1;
+        int l=0;
+        while(l<=u){
+            int mid=l+ (u-l)/2;
+            if(a[mid]==t) return mid;
+            else if(a[mid]<t)l=mid+1;
+            else{ u=mid-1;}
+        }
+        return -1;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int target=sc.nextInt();
+        int[] arr= {12,6,7,34,58};
+        Arrays.sort(arr);
+        int value=func(arr, target);
+        if(value!=-1){System.out.println("Target found at index:"+ value);}
+        else{System.out.print("Target not found in given array");}
+        sc.close();
+    }
+}
+
+
+
 
 
 
