@@ -85,6 +85,7 @@ public class Main{
         int value=func(arr, target);
         if(value!=-1){System.out.println("Target found at index:"+ value);}
         else{System.out.print("Target not found in given array");}
+        System.out.print("Done");
         sc.close();
     }
 }
