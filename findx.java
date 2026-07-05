@@ -91,7 +91,7 @@ public class Main{
 }
 
 
-// binary search using recursion
+// selection sort
 import java.util.*;
 public class Main{
     public static void sort(int[] arr){
@@ -109,11 +109,10 @@ public class Main{
     }
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
-        int n= sc.nextInt();
-        int[] arr= {43,64,2,63,53,6,2};
+        int[] arr= {43,64,2,63,53,6};
         sort(arr);
         for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i]);
+            System.out.println(arr[i]);
         }
         sc.close();
         }
