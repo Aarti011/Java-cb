@@ -123,6 +123,49 @@ public class Main{
 
 
 
+import java.util.*;
+public class Main{
+    public static void sort(int[] arr){
+        int len= arr.length;
+        for(int i=0; i<len-1; i++) {
+            for(int j=i+1; j<len; j++){
+                if(arr[i]>arr[j])swap(arr,i,j);
+            }
+        }
+    }
+    public static void swap(int[] arr, int a,int b){
+        int temp=arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+    }
+    public static int duplicacy(int[] a){
+        if(a.length==1)return 1;
+        int j=0;
+        for(int i=1; i<a.length; i++){
+            if(a[i]!=a[j]) {
+                j++;
+                a[j]=a[i];
+            }
+        }
+        return j+1;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int[] arr= {43,64,2,63,53,6,2};
+        sort(arr);
+        int len=duplicacy(arr);
+        for(int i=0; i<len; i++){
+            System.out.println(arr[i]);
+        }
+        sc.close();
+        }
+}
+
+
+
+
+
+
 
 
 
