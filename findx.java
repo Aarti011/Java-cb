@@ -91,6 +91,9 @@ public class Main{
 }
 
 
+
+
+
 // selection sort
 import java.util.*;
 public class Main{
@@ -115,29 +118,17 @@ public class Main{
             System.out.println(arr[i]);
         }
         sc.close();
-        }
+    }
 }
 
 
 
 
 
-
+// remove duplicacy
 import java.util.*;
 public class Main{
-    public static void sort(int[] arr){
-        int len= arr.length;
-        for(int i=0; i<len-1; i++) {
-            for(int j=i+1; j<len; j++){
-                if(arr[i]>arr[j])swap(arr,i,j);
-            }
-        }
-    }
-    public static void swap(int[] arr, int a,int b){
-        int temp=arr[a];
-        arr[a]=arr[b];
-        arr[b]=temp;
-    }
+    
     public static int duplicacy(int[] a){
         if(a.length==1)return 1;
         int j=0;
@@ -152,19 +143,45 @@ public class Main{
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         int[] arr= {43,64,2,63,53,6,2};
-        sort(arr);
         int len=duplicacy(arr);
         for(int i=0; i<len; i++){
             System.out.println(arr[i]);
         }
         sc.close();
-        }
+    }
 }
+    
 
 
 
 
 
+// binary serach using recursion
+
+import java.util.*;
+public class Main{
+    public static int search(int[] a, int l, int r, int key){
+        if(l>r) return -1;
+        int mid= l+(r-l)/2;
+        if(a[mid]==key)return mid;
+        if(a[mid]<key)return search(a, mid+1, r, key);
+        else return search(a, l, mid-1, key);
+    }
+   
+  
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int[] arr= {43,64,2,63,53,6,2};
+        int l=0;
+        int r=arr.length-1;
+        int key=64;
+        Arrays.sort(arr);
+        int ans= search(arr, l, r, key);
+        if(ans==-1)System.out.println("not found");
+        else System.out.println("found at index : "+ ans);
+        sc.close();
+    }
+}
 
 
 
