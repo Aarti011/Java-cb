@@ -150,8 +150,6 @@ public class Main{
         sc.close();
     }
 }
-    
-
 
 
 
@@ -186,10 +184,7 @@ public class Main{
 
 
 
-
-
-
-
+// Arrays and aarray list in java
 
 
 
