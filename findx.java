@@ -208,19 +208,18 @@ public class Main{
 import java.util.HashMap;
 import java.util.Map;
 public class Main{
-    public static void main(String args[]){
-        Map<Integer, Inetger> map= new HashMap<>(); //create map
+    public static void main(String[] args){
+        Map<Integer, Integer> map= new HashMap<>(); //create map
         map.put(1, 5635563); //inseurt values in map
         map.put(2, 5668444);
         System.out.print(map.get(1)); //printint values from map
-        map.put(1, 0875937); //updating value
+        map.put(1, 875937); //updating value
         System.out.print(map);
-        System.out.print(map.containsKeya(1));
+        System.out.print(map.containsKey(1));
         map.remove(2);
         System.out.print(map.size());     
     }
 }
-
 
 
 
