@@ -210,9 +210,9 @@ import java.util.Map;
 public class Main{
     public static void main(String[] args){
         Map<Integer, Integer> map= new HashMap<>(); //create map
-        map.put(1, 5635563); //inseurt values in map
+        map.put(1, 5635563); //insert values in map
         map.put(2, 5668444);
-        System.out.print(map.get(1)); //printint values from map
+        System.out.print(map.get(1)); //print int values from map
         map.put(1, 875937); //updating value
         System.out.print(map);
         System.out.print(map.containsKey(1));
@@ -225,7 +225,31 @@ public class Main{
 
 
 
-
+// java code for sliding window variable length
+// code for finding maximum length unique substring
+import java.util.*;
+public class Main{
+    public static int func(String s){
+        HashSet<Character> hs= new HashSet<>();
+        int maxlen=0;
+        int left=0;
+        for(int i=0; i<s.length(); i++){
+            while(hs.contains(s.charAt(i))){
+                hs.remove(s.charAt(left));
+                left++;
+            }
+            hs.add(s.charAt(i));
+            maxlen=Math.max(maxlen, i-left+1);
+        }
+        return maxlen;
+    }
+    public static void main(String[] args){
+        String s="abcdbcdbb";
+        int ans=func(s);
+        System.out.println(ans);
+        
+    }
+}
 
 
 
