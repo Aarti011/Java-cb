@@ -257,7 +257,30 @@ public class Main{
 
 
 
-
-
+// Java Code for sliding window
+import java.util.Scanner;
+import java.util.HashMap;
+public class Main{
+    public static void func(String s){
+        HashSet<Characters> hs= new HashSet<>();
+        int maxlength=0;
+        int left=0;
+        for(int i=0; i<s.length(); i++){
+            while(hs.contains(s.chartAt(i))){
+                hs.remove(s.charAt(left));
+                left++;
+            }
+            hs.add(s.charAt(i));
+            maxlength=Math.max(maxlength, i-left+1);
+        } 
+        return maxlength;
+    }
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        String s sc.next();
+        int ans= func(s);
+        System.out.print(ans);
+    }  
+}
 
     
