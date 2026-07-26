@@ -303,11 +303,33 @@ public class Main {
                 System.out.println(map.get(diff)+" "+i);
                 return;
             }
-
             map.put(arr[i],i);
         }
     }
 }
+
+
+
+
+
+
+// java code for two sum (Important for Interview using map) 
+import java.util.*;
+public class Main{
+    public static int func(){} 
+    public static void main(String args[]){
+        int[] arr= {34,75,3,2,76,9,5,4};
+        int target=9;
+        HashMap<Integer, Integer> map= new HashMap<>();
+        For(int i=0; i<arr.length; i++){
+            int diff= target-arr[i];
+            if() map
+        }
+    } 
+}
+
+
+
    
 
 
