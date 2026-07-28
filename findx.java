@@ -344,3 +344,70 @@ public class Main{
         System.out.println(result);
     }
 }
+
+
+
+
+
+
+
+// java code for linked list
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
+        this.next=null;
+    }
+}
+class Main{
+    static void print(Node head){
+        while(head != null){
+            System.out.print(head.data + "" );
+            head= head.next;
+            }
+        }
+    }
+public static void main(String[] args){
+    Node.head = new Node(10);
+    head.next = new Node(20);
+    head.next.next = new Node(30);
+    head.next.next.next = new Node(40);
+    print(head);
+}
+}
+
+
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data= data;
+        this.next= next;
+    }
+}
+public class Main{
+    public static int func(Node head){
+        while(head != null){
+            System.out.print(head.data);
+            head.data= next;
+        }
+    }
+    public static void main(String[] args){
+        Node head = new Node(10) ;
+        head.next = new Node(20) ;
+        head.next.next= new Node(30);
+        head.next.next.next= new Node(40);
+        print(head);
+    }
+}
+
+
+
+
+
+
+
+
+
+
