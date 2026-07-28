@@ -374,10 +374,16 @@ public static void main(String[] args){
     head.next.next = new Node(30);
     head.next.next.next = new Node(40);
     print(head);
-}
+    }
 }
 
 
+
+
+
+
+
+// java code for Linkedlist insertion and deletion
 class Node{
     int data;
     Node next;
@@ -399,8 +405,27 @@ public class Main{
         head.next.next= new Node(30);
         head.next.next.next= new Node(40);
         print(head);
+
+
+        // delete first node
+        head= head.next;
+
+        // delete last node
+        Node temp= head;
+        while(temp.next.next != null){
+            temp=temp.next;
+        }
+        temp.next=null;
     }
 }
+
+
+
+
+
+
+// search an element
+
 
 
 
