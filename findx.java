@@ -310,30 +310,37 @@ public class Main {
 
 
 
-
-
-
-// java code for two sum (Important for Interview using map) 
-import java.util.*;
-public class Main{
-    public static int func(){} 
-    public static void main(String args[]){
-        int[] arr= {34,75,3,2,76,9,5,4};
-        int target=9;
-        HashMap<Integer, Integer> map= new HashMap<>();
-        For(int i=0; i<arr.length; i++){
-            int diff= target-arr[i];
-            if() map
-        }
-    } 
-}
-
-
-
    
 
 
-    
+// java code for 3sum problem
+import java.util.*;
 
-
-
+public class Main{
+    public static Link<List<Integer>> threeSum(int[] nums){
+        List<List<Integer>> ans= new arrayList<>();
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-2; i++){
+            if(i>0 && nums[i] == nums[i-1]){
+                continue;
+            }
+            int left=i+1;
+            int right= nums.length -1;
+            while(left<right){
+                int sum= nums[i]+ nums[left] + nums[right];
+                if(sum==0){
+                    ans.add(Arrays.asList(nums[i],nums[left],nums[right]));
+                    left++;
+                    right--;
+            }else if(sum < 0){ left++ ;}
+             else { right-- ;}
+            }   
+        }
+        return ans;
+    }
+    public static void main(String[] args){
+        int[] ={-1,2,3,1, 0 , 4};
+        List<List<Integer>> result= threeSum(nums);
+        System.out.println(result);
+    }
+}
