@@ -455,5 +455,57 @@ public class Main{
 
 
 
+// another code for tower of hanoi
+import java.util.*;
+public class Main{
+    public static void func(int n, char s, char h, char d){
+        if(n==0) return; 
+        func(n-1, s, d,h);
+        System.out.print(s + " --> " + d);
+        func(n-1,h, s, d);
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        func(n, 'S', 'D', 'H');
+    }
+}
+
+
+
+
+
+
+//  Another code for towert of hanoi
+import java.util.*;
+public class Main{
+    public static void move(){}
+    public static void func(int n){
+        Stack<Integer> s=new Stack<>();
+        Stack<Integer> a=new Stack<>();
+        Stack<Integer> d=new Stack<>();
+
+        char S= 'A', A='B' , D='C' ;
+        if(n%2 == 0){
+            char temp=D;
+            D= A;
+            A= temp;
+            
+            for(int i=n; i>=1; i--){
+                
+            }
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        func(n);
+        
+    }
+}
+
+
+
+
 
 
