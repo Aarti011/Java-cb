@@ -425,8 +425,29 @@ public class Main{
 
 
 // search an element
+import java.util.*;
+public class Main{
+    static void Hanoi(int n, chr src, char aux, char dst){
+        if(n == 1){
+            System.out.println( "Move disk 1 from "+src + "to" + dst);
+            return;
+        }
+        //  moving n-1 from source to destiantion
+        Hanoi(n-1, src, dst, aux);
 
-
+        // move to the largest disk
+        System.out.println(" Move disk" + n + "from"+ src +"to" + dst);
+        
+        //  move n-1 disks from auxiliary to destination
+        Hanoi(n-1, aux, src, dst);
+    }
+    public static voiod main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter number of disks");
+        int n= sc.nextInt();
+        Hanoi(n, 'A', 'B', 'C');
+    }
+}
 
 
 
